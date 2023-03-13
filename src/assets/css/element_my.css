@@ -1,0 +1,60 @@
+.searchPop {
+    height: 380px;
+    overflow-y: scroll;
+    margin: 3px 0 0  !important;
+    padding: 0 !important;
+  }
+.searchPop::-webkit-scrollbar {
+    display: none;
+}
+
+.el-aside::-webkit-scrollbar {
+  width: 6px;
+}
+
+.el-menu-item {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.el-aside::-webkit-scrollbar-thumb {
+  background-color: #e0e0e0;
+}
+
+/* 设置el-popover的样式 */
+
+.sortPop {
+  position: absolute;
+  z-index: 0 !important;
+  height: 40%;
+  overflow-y: scroll;
+}
+
+.sortPop::-webkit-scrollbar {
+  width: 6px;
+}
+
+.el-drawer__body {
+  overflow: auto;
+  /* overflow-x: auto; */
+}
+
+/*2.隐藏滚动条*/
+.el-drawer__container ::-webkit-scrollbar {
+  display: none;
+}
+
+.el-drawer .el-table .cell {
+  color: rgb(39, 39, 39) !important;
+}
+
+.el-drawer .el-table td:nth-child(3) .cell {
+  color: #aaa !important;
+}
+
+.el-drawer .el-table td,
+.el-table th {
+  padding: 5px 0;
+}
+

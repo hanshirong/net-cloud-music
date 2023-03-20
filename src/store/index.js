@@ -30,7 +30,7 @@ const state = {
     isMusicLoad: false,
     // 当前播放歌单的id
     musicListId: '',
-
+    theme:'light',
 
 }
 
@@ -91,6 +91,9 @@ const store = new Vuex.Store({
         },
         updateCurrentIndex(state,index){
             state.currentIndex = index
+        },
+        updateTheme(state,theme){
+            state.theme = theme
         }
 
     },

@@ -139,6 +139,9 @@
         <div class="userName"
              v-else>点击头像登录</div>
       </div>
+      <div class="theme">
+        <Theme-Control></Theme-Control>
+      </div>
     </div>
 
   </div>
@@ -147,13 +150,14 @@
 <script>
 import { handleMusicTime } from 'plugins/utils';
 import Login from 'components/login/Login.vue';
+import ThemeControl from 'components/themeControl/index.vue'
 
 // 节流定时器名称
 let timer;
 
 export default {
   name: 'HeaderBar',
-  components:{Login},
+  components:{Login,ThemeControl},
   data() {
     return {
       // 搜索框的内容

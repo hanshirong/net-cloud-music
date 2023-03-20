@@ -154,7 +154,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang=less scoped>
+@light-color: #007bff;
 
 .is-active {
   background-color: #f6f6f7;
@@ -175,7 +176,7 @@ export default {
 }
 
 .el-header {
-  background-color: #ec4141;
+  background-color: @light-color;
   height: 50px !important;
   padding: 0;
   margin: 0;
